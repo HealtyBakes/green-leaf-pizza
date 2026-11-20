@@ -93,10 +93,8 @@ nav a.btn{color:var(--flour);min-height:44px;padding:0 20px;font-size:16px}
 .stat sup a{color:var(--semolina);text-decoration:none;font-size:12px}
 
 /* story */
-.story .wrap{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:80px;align-items:center}
-.story-media{display:flex;justify-content:center;background:var(--forest);padding:40px}
-.story-media video{width:100%;max-width:420px;aspect-ratio:352/410;height:auto;object-fit:cover;display:block}
-.story h2{font-size:clamp(40px,5vw,64px);margin-bottom:32px}
+.story .wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:80px;align-items:start}
+.story h2{font-size:clamp(44px,5.6vw,76px)}
 .story .prose p{margin:0 0 20px;font-size:19px}
 .story .prose p:first-child{font-family:var(--display);font-weight:700;font-size:26px;line-height:1.35}
 .quote{margin:36px 0 0;padding-top:24px;border-top:2px solid var(--forest);font-family:var(--display);font-weight:800;font-size:30px;line-height:1.2}

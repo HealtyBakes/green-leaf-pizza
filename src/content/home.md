@@ -150,9 +150,6 @@ story:
   eyebrow: "Our story"
   title: "Two years in a Harrow kitchen."
   quote: "Nothing taken away from the taste. Nobody left out of the table."
-  video: "/images/fresh.mp4"
-  poster: "/images/fresh-poster.jpg"
-  videoLabel: "A fresh Green Leaf pizza, straight out of the oven"
 
 table:
   image: "/images/table.jpg"

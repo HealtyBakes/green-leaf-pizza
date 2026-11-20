@@ -4,12 +4,11 @@ const { story } = copy;
 ---
 <section class="story" id="story" aria-labelledby="story-title">
   <div class="wrap">
-    <div class="story-media reveal">
-      <video src={story.video} poster={story.poster} autoplay muted loop playsinline preload="metadata" aria-label={story.videoLabel} width="352" height="410"></video>
-    </div>
-    <div class="body reveal">
+    <div class="story-head reveal">
       <p class="eyebrow">{story.eyebrow}</p>
       <h2 id="story-title">{story.title}</h2>
+    </div>
+    <div class="body reveal">
       <div class="prose"><StoryBody /></div>
       <p class="quote">{story.quote}</p>
     </div>
