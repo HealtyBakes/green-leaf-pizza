@@ -156,7 +156,7 @@ story:
 
 table:
   image: "/images/table.jpg"
-  imageAlt: "Close-up of a Green Leaf pizza topped with sweetcorn, peppers, olives, jalapeños and fresh coriander"
+  imageAlt: "A Green Leaf pizza topped with sweetcorn, peppers, olives, jalapeños and fresh coriander"
   line: "Pizza night, the whole family in."
 
 quality:
