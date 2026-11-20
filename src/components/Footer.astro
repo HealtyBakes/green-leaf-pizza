@@ -1,5 +1,6 @@
 ---
-import { site, sources } from '../data/site.js';
+import { copy } from '../content/copy.js';
+const { site, footer } = copy;
 const year = new Date().getFullYear();
 ---
 <footer>
@@ -10,14 +11,14 @@ const year = new Date().getFullYear();
         <p style="margin:18px 0 0">{site.parent} · {site.place}</p>
       </div>
       <div>
-        <p style="margin:0">Order: <a href={site.orderUrl}>{site.orderLabel}</a></p>
-        <p style="margin:8px 0 0">© {year} Healthy Bakes</p>
+        <p style="margin:0">{footer.orderPrefix} <a href={site.orderUrl}>{site.orderLabel}</a></p>
+        <p style="margin:8px 0 0">© {year} {site.copyright}</p>
       </div>
     </div>
     <div class="sources">
-      Sources
+      {footer.sourcesTitle}
       <ol>
-        {sources.map((s, i) => <li id={`s${i + 1}`}>{s}</li>)}
+        {footer.sources.map((s, i) => <li id={`s${i + 1}`}>{s}</li>)}
       </ol>
     </div>
   </div>

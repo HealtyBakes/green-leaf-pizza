@@ -1,10 +1,11 @@
 ---
 import Dot from './Dot.astro';
-import { site } from '../data/site.js';
+import { copy } from '../content/copy.js';
+const { community } = copy;
 ---
-<section class="community" aria-label={`${site.community}.`}>
+<section class="community" aria-label={`${community.line}.`}>
   <div class="wrap">
-    <p class="line">{site.community}<Dot /></p>
-    <p class="sub">Hand-made in Harrow, for the whole table. From families who wanted pizza night back.</p>
+    <p class="line">{community.line}<Dot /></p>
+    <p class="sub">{community.sub}</p>
   </div>
 </section>

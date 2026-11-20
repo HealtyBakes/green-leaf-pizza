@@ -1,11 +1,8 @@
 ---
 import '../styles/global.css';
-import { site } from '../data/site.js';
+import { copy } from '../content/copy.js';
 interface Props { title?: string; description?: string }
-const {
-  title = `${site.name} — ${site.tagline}.`,
-  description = `Proper pizza for the whole table. ${site.descriptor} pizzas, hand-made in ${site.place.split(',')[0]} by Healthy Bakes.`,
-} = Astro.props;
+const { title = copy.site.title, description = copy.site.description } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL('/assets/og-image.png', Astro.site);
 ---

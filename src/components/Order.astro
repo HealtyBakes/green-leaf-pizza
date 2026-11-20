@@ -1,12 +1,13 @@
 ---
-import { site } from '../data/site.js';
+import { copy } from '../content/copy.js';
+const { site, order } = copy;
 ---
 <section class="order" id="order" aria-labelledby="order-title">
   <div class="wrap">
     <div>
-      <h2 id="order-title">Hungry yet?</h2>
-      <p>Made fresh in Harrow, serving Harrow and nearby.</p>
+      <h2 id="order-title">{order.title}</h2>
+      <p>{order.text}</p>
     </div>
-    <a class="btn" href={site.orderUrl}>Order at {site.orderLabel}</a>
+    <a class="btn" href={site.orderUrl}>{order.button}</a>
   </div>
 </section>

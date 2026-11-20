@@ -1,14 +1,15 @@
 ---
-import { stats } from '../data/site.js';
+import { copy } from '../content/copy.js';
+const { numbers } = copy;
 ---
 <section class="numbers" aria-labelledby="numbers-title">
   <div class="wrap">
-    <p class="eyebrow" id="numbers-title">The table is bigger than you think</p>
+    <p class="eyebrow" id="numbers-title">{numbers.eyebrow}</p>
     <div class="stats">
-      {stats.map((s) => (
+      {numbers.items.map((s) => (
         <div class="stat">
           <div class="big">{s.big}</div>
-          <p>{s.text}<sup><a href={`#s${s.source}`} aria-label={`Source ${s.source}`}>{s.source}</a></sup></p>
+          <p>{s.text}{s.source && <sup><a href={`#s${s.source}`} aria-label={`Source ${s.source}`}>{s.source}</a></sup>}</p>
         </div>
       ))}
     </div>

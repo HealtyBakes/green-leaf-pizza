@@ -1,11 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
+import { copy } from '../content/copy.js';
+const { notFound } = copy;
 ---
-<Base title="Not found — Green Leaf Pizza">
+<Base title={notFound.title}>
   <main id="main" class="notfound">
     <img src="/assets/symbol.svg" alt="" width="90" height="114">
-    <h1>This slice is missing.</h1>
-    <a class="btn btn-primary" href="/">Back to the whole pizza</a>
+    <h1>{notFound.heading}</h1>
+    <a class="btn btn-primary" href="/">{notFound.button}</a>
   </main>
 </Base>
 <style>

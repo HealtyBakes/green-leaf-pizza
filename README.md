@@ -7,7 +7,7 @@ Astro site for greenleafpizza.com. Nothing missing.
     npm run dev        # http://localhost:4321
 
 ## Edit content
-Lines, links, stats, promises and sources live in `src/data/site.js`.
+All website copy lives in `src/content/home.md`: lines, links, sections, stats, promises, sources and the story.
 Sections are in `src/components/`. Brand styles are in `src/styles/global.css`.
 
 ## Deploy

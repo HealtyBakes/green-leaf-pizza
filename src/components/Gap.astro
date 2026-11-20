@@ -1,16 +1,17 @@
 ---
-import { gaps } from '../data/site.js';
+import { copy } from '../content/copy.js';
+const { gap } = copy;
 ---
 <section class="gap" id="gap" aria-labelledby="gap-title">
   <div class="wrap">
-    <p class="eyebrow">Why we exist</p>
-    <h2 id="gap-title">London has thousands of pizzas. Almost none for our table.</h2>
-    <p class="intro">Ask for a pizza with no egg, no dairy, no onion, no garlic and no root vegetables, and watch the menu fall apart. Each kind of place gets one part right and misses the rest.</p>
+    <p class="eyebrow">{gap.eyebrow}</p>
+    <h2 id="gap-title">{gap.title}</h2>
+    <p class="intro">{gap.intro}</p>
     <div class="rows">
-      {gaps.map((g, i) => (
+      {gap.items.map((g, i) => (
         <div class="row"><span class="n">{i + 1}</span><h3>{g.title}</h3><p>{g.text}</p></div>
       ))}
     </div>
-    <p class="verdict">So families picked toppings off, or didn't order at all. We think that's wrong. Pizza is meant to be shared.</p>
+    <p class="verdict">{gap.verdict}</p>
   </div>
 </section>

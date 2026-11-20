@@ -1,19 +1,30 @@
 ---
-import { promises } from '../data/site.js';
+import { copy } from '../content/copy.js';
+const { promises } = copy;
+// Brand colours for each tag tone (design, not copy).
+const tones = {
+  forest: ['#1C3324', '#FBF7EF'],
+  basil: ['#2F5D3A', '#FBF7EF'],
+  semolina: ['#E2A93B', '#1C3324'],
+  tomato: ['#C2381F', '#FBF7EF'],
+};
 ---
 <section class="table" id="table" aria-labelledby="table-title">
   <div class="wrap">
-    <p class="eyebrow">What's on the table</p>
-    <h2 id="table-title">Everyone eats. Nobody asks.</h2>
-    <p class="intro">Four promises, kept in every recipe, so you can order for the whole family without reading the small print.</p>
+    <p class="eyebrow">{promises.eyebrow}</p>
+    <h2 id="table-title">{promises.title}</h2>
+    <p class="intro">{promises.intro}</p>
     <div class="labels">
-      {promises.map((p) => (
-        <div class="label">
-          <span class="pill" style={`background:${p.bg};color:${p.fg}`}>{p.label}</span>
-          <p>{p.text}</p>
-          {p.off && <p class="off">{p.off}</p>}
-        </div>
-      ))}
+      {promises.items.map((p) => {
+        const [bg, fg] = tones[p.tone] ?? tones.basil;
+        return (
+          <div class="label">
+            <span class="pill" style={`background:${bg};color:${fg}`}>{p.label}</span>
+            <p>{p.text}</p>
+            {p.note && <p class="off">{p.note}</p>}
+          </div>
+        );
+      })}
     </div>
   </div>
 </section>
