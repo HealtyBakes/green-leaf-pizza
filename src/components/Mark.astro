@@ -1,16 +1,23 @@
 ---
 import { copy } from '../content/copy.js';
 const { mark } = copy;
+// Peel-leaf symbol drawn inline so its six cuts can animate in.
+const cuts = [[100, 24], [148.5, 66], [51.5, 66], [60.16, 117], [139.84, 117], [100, 150]];
 ---
 <section class="mark" aria-labelledby="mark-title">
   <div class="wrap">
-    <div class="symbol"><img src="/assets/symbol-flour.svg" alt={mark.imageAlt} width="240" height="303"></div>
-    <div>
+    <div class="symbol reveal">
+      <svg viewBox="28 10 144 182" role="img" aria-label="The Green Leaf Pizza symbol: a leaf shaped like a pizza peel, cut into six slices">
+        <path d="M100,150 C58,150 30,124 30,90 C30,56 62,30 100,12 C138,30 170,56 170,90 C170,124 142,150 100,150 Z" fill="#FBF7EF"/>
+        <path d="M93.2,146 L94.4,184 Q100,193 105.6,184 L106.8,146 Z" fill="#FBF7EF"/>
+        <circle cx="100" cy="180.5" r="2.7" fill="#2F5D3A"/>
+        {cuts.map(([x, y]) => <path class="cut" d={`M100,94 L${x},${y}`} stroke="#2F5D3A" stroke-width="6.5" stroke-linecap="round" fill="none"/>)}
+      </svg>
+    </div>
+    <div class="reveal">
       <p class="eyebrow">{mark.eyebrow}</p>
       <h2 id="mark-title">{mark.title}</h2>
-      <ol>
-        {mark.items.map((r) => <li><b>{r.title}</b><span>{r.text}</span></li>)}
-      </ol>
+      <p class="text">{mark.text}</p>
     </div>
   </div>
 </section>

@@ -5,13 +5,12 @@ const { gap } = copy;
 <section class="gap" id="gap" aria-labelledby="gap-title">
   <div class="wrap">
     <p class="eyebrow">{gap.eyebrow}</p>
-    <h2 id="gap-title">{gap.title}</h2>
-    <p class="intro">{gap.intro}</p>
-    <div class="rows">
-      {gap.items.map((g, i) => (
-        <div class="row"><span class="n">{i + 1}</span><h3>{g.title}</h3><p>{g.text}</p></div>
+    <h2 id="gap-title" class="reveal">{gap.title}</h2>
+    <div class="punches">
+      {gap.items.map((g) => (
+        <div class="punch reveal"><p class="q">{g.q}</p><p class="a">{g.a}</p></div>
       ))}
     </div>
-    <p class="verdict">{gap.verdict}</p>
+    <p class="verdict reveal">{gap.verdict}</p>
   </div>
 </section>

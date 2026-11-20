@@ -1,4 +1,5 @@
 ---
+import WhatsAppIcon from './WhatsAppIcon.astro';
 import { copy } from '../content/copy.js';
 const { site, order } = copy;
 ---
@@ -8,6 +9,6 @@ const { site, order } = copy;
       <h2 id="order-title">{order.title}</h2>
       <p>{order.text}</p>
     </div>
-    <a class="btn" href={site.orderUrl}>{order.button}</a>
+    <a class="btn" href={site.orderUrl}><WhatsAppIcon />{order.button}</a>
   </div>
 </section>

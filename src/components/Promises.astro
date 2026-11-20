@@ -1,7 +1,7 @@
 ---
 import { copy } from '../content/copy.js';
 const { promises } = copy;
-// Brand colours for each tag tone (design, not copy).
+// Brand colours for each tile tone (design, not copy).
 const tones = {
   forest: ['#1C3324', '#FBF7EF'],
   basil: ['#2F5D3A', '#FBF7EF'],
@@ -9,19 +9,18 @@ const tones = {
   tomato: ['#C2381F', '#FBF7EF'],
 };
 ---
-<section class="table" id="table" aria-labelledby="table-title">
+<section class="promises" id="table" aria-labelledby="table-title">
   <div class="wrap">
     <p class="eyebrow">{promises.eyebrow}</p>
-    <h2 id="table-title">{promises.title}</h2>
+    <h2 id="table-title" class="reveal">{promises.title}</h2>
     <p class="intro">{promises.intro}</p>
-    <div class="labels">
+    <div class="tiles">
       {promises.items.map((p) => {
         const [bg, fg] = tones[p.tone] ?? tones.basil;
         return (
-          <div class="label">
-            <span class="pill" style={`background:${bg};color:${fg}`}>{p.label}</span>
+          <div class="tile reveal" style={`background:${bg};color:${fg}`}>
+            <h3>{p.label}</h3>
             <p>{p.text}</p>
-            {p.note && <p class="off">{p.note}</p>}
           </div>
         );
       })}

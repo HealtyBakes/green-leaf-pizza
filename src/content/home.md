@@ -2,6 +2,7 @@
 # ─────────────────────────────────────────────────────────────
 # Green Leaf Pizza — all website copy lives in this file.
 # Edit the text between quotes. Keep the indentation as it is.
+# Photos: put files in public/images/ and change the image paths.
 # The story paragraphs are the plain text below the closing ---
 # ─────────────────────────────────────────────────────────────
 
@@ -19,8 +20,8 @@ site:
 
 nav:
   links:
-    - label: "Why we exist"
-      href: "/#gap"
+    - label: "Menu"
+      href: "/#menu"
     - label: "Our story"
       href: "/#story"
     - label: "What's on the table"
@@ -30,22 +31,45 @@ nav:
 hero:
   eyebrow: "Artisan pizza & desserts · Harrow, London"
   lede: "Proper pizza for the whole table. Crisp edge, soft middle, real flavour, and every single person can eat it."
-  primaryButton: "Order now"
-  secondaryButton: "Read our story"
-  captions: ["A leaf", "A peel", "A pizza"]
+  primaryButton: "Order on WhatsApp"
+  secondaryButton: "See the menu"
+  image: "/images/hero.svg"
+  imageAlt: "A Green Leaf pizza, fresh from the oven"
+
+# The moving strip under the hero
+ticker: ["Eggless", "Vegan", "Jain friendly", "Satvik", "Hand-made in Harrow", "Nothing missing"]
 
 gap:
   eyebrow: "Why we exist"
   title: "London has thousands of pizzas. Almost none for our table."
-  intro: "Ask for a pizza with no egg, no dairy, no onion, no garlic and no root vegetables, and watch the menu fall apart. Each kind of place gets one part right and misses the rest."
   items:
-    - title: "Vegan pizzerias"
-      text: "No meat, no dairy. But onion and garlic often run through the sauces, the oils and the toppings. Vegan isn't the same as Jain or Satvik."
-    - title: "The big chains"
-      text: "Great at speed. But a Jain order turns into a list of things to take off, and you still can't be sure what's in the base or the sauce."
-    - title: "Indian vegetarian kitchens"
-      text: "They understand Jain and Satvik food perfectly. But they're not pizzerias, and pizza night shouldn't be a compromise."
-  verdict: "So families picked toppings off, or didn't order at all. We think that's wrong. Pizza is meant to be shared."
+    - q: "Vegan pizzeria?"
+      a: "Still onion. Still garlic."
+    - q: "Big chain?"
+      a: "Pick it off and hope."
+    - q: "Indian kitchen?"
+      a: "Perfect food. No pizza."
+  verdict: "So we made the pizza we couldn't find."
+
+menu:
+  eyebrow: "On the menu"
+  title: "Four to start. All for everyone."
+  note: "Every pizza is eggless, vegan, Jain and Satvik friendly. Message us on WhatsApp to order."
+  button: "Order this"
+  # SAMPLE MENU — replace names, toppings and photos with the real menu.
+  items:
+    - name: "Margherita"
+      toppings: "San Marzano-style tomato, plant-based mozzarella, torn basil, olive oil"
+      image: "/images/menu-1.svg"
+    - name: "Garden Peppers"
+      toppings: "Red, yellow and green peppers, black olives, oregano, plant-based mozzarella"
+      image: "/images/menu-2.svg"
+    - name: "Sweetcorn & Capsicum"
+      toppings: "Sweet corn, green capsicum, chilli flakes, plant-based mozzarella"
+      image: "/images/menu-3.svg"
+    - name: "Mediterranean"
+      toppings: "Sun-dried tomato, olives, capers, rocket, plant-based mozzarella"
+      image: "/images/menu-4.svg"
 
 numbers:
   eyebrow: "The table is bigger than you think"
@@ -64,47 +88,50 @@ story:
   eyebrow: "Our story"
   title: "Two years in a Harrow kitchen."
   quote: "Nothing taken away from the taste. Nobody left out of the table."
+  image: "/images/kitchen.svg"
+  imageAlt: "Dough being stretched by hand in the Healthy Bakes kitchen"
+
+table:
+  image: "/images/table.svg"
+  imageAlt: "Pizza shared across a family table"
+  line: "Pizza night, the whole family in."
+
+quality:
+  eyebrow: "Our ingredients"
+  line: "Best quality ingredients."
+  sub: "Never compromise on the quality of what you eat."
 
 mark:
   eyebrow: "The mark"
   title: "One shape. Three reads."
-  imageAlt: "The Green Leaf Pizza symbol: a leaf shaped like a pizza peel, cut into six slices"
-  items:
-    - title: "A leaf."
-      text: "Fresh, green, made from plants. You see it first."
-    - title: "A peel."
-      text: "The wooden paddle that slides pizza into the oven. Round blade, long handle, the hole it hangs by."
-    - title: "A pizza."
-      text: "Six cuts from the centre: the moment the box opens."
+  text: "A leaf for what it's made of. A peel for how it's made. Six cuts for the moment the box opens."
 
 promises:
   eyebrow: "What's on the table"
   title: "Everyone eats. Nobody asks."
   intro: "Four promises, kept in every recipe, so you can order for the whole family without reading the small print."
-  # tone sets the tag colour: forest, basil, semolina or tomato
+  # tone sets the tile colour: forest, basil, semolina or tomato
   items:
     - label: "Eggless"
       tone: forest
       text: "No egg, anywhere. Not in the dough, not in the desserts."
     - label: "Vegan"
       tone: basil
-      text: "100% plant-based. Plant-based mozzarella, no dairy, no animal products."
-    - label: "Jain friendly"
+      text: "100% plant-based. Plant-based mozzarella, no dairy."
+    - label: "Jain"
       tone: semolina
-      text: "No root vegetables."
-      note: "No onion, garlic, potato or carrot."
+      text: "No root vegetables. No onion, garlic, potato or carrot."
     - label: "Satvik"
       tone: tomato
-      text: "Pure, simple, wholesome ingredients."
-      note: "No onion, no garlic."
+      text: "Pure, simple ingredients. No onion, no garlic."
 
 community:
   line: "Pure taste. Proper pizza"
-  sub: "Hand-made in Harrow, for the whole table. From families who wanted pizza night back."
+  sub: "Hand-made in Harrow, for the whole table."
 
 order:
   title: "Hungry yet?"
-  text: "Made fresh in Harrow, serving Harrow and nearby."
+  text: "Made fresh in Harrow, serving Harrow and nearby. Message us and we'll take it from there."
   button: "Order on WhatsApp"
 
 footer:

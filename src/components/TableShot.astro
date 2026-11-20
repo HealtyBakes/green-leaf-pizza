@@ -1,0 +1,8 @@
+---
+import { copy } from '../content/copy.js';
+const { table } = copy;
+---
+<section class="tableshot" aria-label={table.line}>
+  <img src={table.image} alt={table.imageAlt} width="1800" height="900" loading="lazy">
+  <p>{table.line}</p>
+</section>

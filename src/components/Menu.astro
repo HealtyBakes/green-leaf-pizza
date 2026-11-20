@@ -1,0 +1,28 @@
+---
+import { copy } from '../content/copy.js';
+const { site, menu } = copy;
+const orderFor = (name) => `${site.orderUrl.split('?')[0]}?text=${encodeURIComponent(`Hi Green Leaf Pizza, I'd like to order a ${name}.`)}`;
+---
+<section class="menu" id="menu" aria-labelledby="menu-title">
+  <div class="wrap">
+    <div class="menu-head">
+      <div>
+        <p class="eyebrow">{menu.eyebrow}</p>
+        <h2 id="menu-title">{menu.title}</h2>
+      </div>
+      <p class="note">{menu.note}</p>
+    </div>
+    <div class="pizzas">
+      {menu.items.map((p) => (
+        <article class="pizza reveal">
+          <div class="ph"><img src={p.image} alt={p.name} width="900" height="900" loading="lazy"></div>
+          <div class="body">
+            <h3>{p.name}</h3>
+            <p>{p.toppings}</p>
+            <a href={orderFor(p.name)}>{menu.button}</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

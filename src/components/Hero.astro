@@ -1,23 +1,19 @@
 ---
 import Dot from './Dot.astro';
+import WhatsAppIcon from './WhatsAppIcon.astro';
 import { copy } from '../content/copy.js';
 const { site, hero } = copy;
 ---
-<section class="hero" aria-labelledby="hero-title" style="padding:0">
-  <div class="wrap">
-    <div>
-      <p class="eyebrow">{hero.eyebrow}</p>
-      <h1 id="hero-title">{site.tagline}<Dot /></h1>
-      <p class="lede">{hero.lede}</p>
-      <p class="descriptor">{site.descriptor}</p>
-      <div class="actions">
-        <a class="btn btn-primary" href={site.orderUrl}>{hero.primaryButton}</a>
-        <a class="btn btn-ghost" href="#story">{hero.secondaryButton}</a>
-      </div>
+<section class="hero" aria-labelledby="hero-title">
+  <img class="hero-img" src={hero.image} alt={hero.imageAlt} width="1800" height="1100" fetchpriority="high">
+  <div class="hero-card">
+    <p class="eyebrow">{hero.eyebrow}</p>
+    <h1 id="hero-title">{site.tagline}<Dot /></h1>
+    <p class="lede">{hero.lede}</p>
+    <p class="descriptor">{site.descriptor}</p>
+    <div class="actions">
+      <a class="btn btn-primary" href={site.orderUrl}><WhatsAppIcon />{hero.primaryButton}</a>
+      <a class="btn btn-ghost" href="#menu">{hero.secondaryButton}</a>
     </div>
-    <figure class="hero-mark" style="margin:0">
-      <img src="/assets/symbol-flour.svg" alt="" width="280" height="354">
-      <figcaption>{hero.captions.map((c) => <span>{c}</span>)}</figcaption>
-    </figure>
   </div>
 </section>
