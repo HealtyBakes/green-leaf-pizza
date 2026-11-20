@@ -1,0 +1,16 @@
+---
+import { stats } from '../data/site.js';
+---
+<section class="numbers" aria-labelledby="numbers-title">
+  <div class="wrap">
+    <p class="eyebrow" id="numbers-title">The table is bigger than you think</p>
+    <div class="stats">
+      {stats.map((s) => (
+        <div class="stat">
+          <div class="big">{s.big}</div>
+          <p>{s.text}<sup><a href={`#s${s.source}`} aria-label={`Source ${s.source}`}>{s.source}</a></sup></p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

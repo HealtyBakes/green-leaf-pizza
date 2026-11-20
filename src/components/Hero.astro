@@ -1,0 +1,22 @@
+---
+import Dot from './Dot.astro';
+import { site } from '../data/site.js';
+---
+<section class="hero" aria-labelledby="hero-title" style="padding:0">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Artisan pizza &amp; desserts · {site.place}</p>
+      <h1 id="hero-title">{site.tagline}<Dot /></h1>
+      <p class="lede">Proper pizza for the whole table. Crisp edge, soft middle, real flavour, and every single person can eat it.</p>
+      <p class="descriptor">{site.descriptor}</p>
+      <div class="actions">
+        <a class="btn btn-primary" href={site.orderUrl}>Order now</a>
+        <a class="btn btn-ghost" href="#story">Read our story</a>
+      </div>
+    </div>
+    <figure class="hero-mark" style="margin:0">
+      <img src="/assets/symbol-flour.svg" alt="" width="280" height="354">
+      <figcaption><span>A leaf</span><span>A peel</span><span>A pizza</span></figcaption>
+    </figure>
+  </div>
+</section>

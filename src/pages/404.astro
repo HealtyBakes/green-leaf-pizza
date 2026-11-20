@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Not found — Green Leaf Pizza">
+  <main id="main" class="notfound">
+    <img src="/assets/symbol.svg" alt="" width="90" height="114">
+    <h1>This slice is missing.</h1>
+    <a class="btn btn-primary" href="/">Back to the whole pizza</a>
+  </main>
+</Base>
+<style>
+  .notfound{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;text-align:center;padding:24px}
+  .notfound h1{font-size:clamp(40px,6vw,64px)}
+</style>

@@ -1,0 +1,15 @@
+---
+import { reads } from '../data/site.js';
+---
+<section class="mark" aria-labelledby="mark-title">
+  <div class="wrap">
+    <div class="symbol"><img src="/assets/symbol-flour.svg" alt="The Green Leaf Pizza symbol: a leaf shaped like a pizza peel, cut into six slices" width="240" height="303"></div>
+    <div>
+      <p class="eyebrow">The mark</p>
+      <h2 id="mark-title">One shape. Three reads.</h2>
+      <ol>
+        {reads.map((r) => <li><b>{r.title}</b><span>{r.text}</span></li>)}
+      </ol>
+    </div>
+  </div>
+</section>
