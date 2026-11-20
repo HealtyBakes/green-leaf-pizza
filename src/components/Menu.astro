@@ -1,7 +1,8 @@
 ---
 import { copy } from '../content/copy.js';
 const { site, menu } = copy;
-const orderFor = (name) => `${site.orderUrl.split('?')[0]}?text=${encodeURIComponent(`Hi Green Leaf Pizza, I'd like to order a ${name}.`)}`;
+const base = site.orderUrl.split('?')[0];
+const orderFor = (name) => `${base}?text=${encodeURIComponent(`Hi Green Leaf Pizza, I'd like to order: ${name}.`)}`;
 ---
 <section class="menu" id="menu" aria-labelledby="menu-title">
   <div class="wrap">
@@ -12,16 +13,44 @@ const orderFor = (name) => `${site.orderUrl.split('?')[0]}?text=${encodeURICompo
       </div>
       <p class="note">{menu.note}</p>
     </div>
-    <div class="pizzas">
-      {menu.items.map((p) => (
-        <article class="pizza reveal">
-          <div class="ph"><img src={p.image} alt={p.name} width="900" height="900" loading="lazy"></div>
-          <div class="body">
-            <h3>{p.name}</h3>
-            <p>{p.toppings}</p>
-            <a href={orderFor(p.name)}>{menu.button}</a>
+
+    <div class="menu-cols">
+      {menu.pizzas.map((sec) => (
+        <div class="menu-sec reveal">
+          <div class="sec-head">
+            <h3>{sec.title}</h3>
+            <span class="sizes">{menu.sizes}</span>
           </div>
-        </article>
+          {sec.note && <p class="sec-note">{sec.note}</p>}
+          <ul>
+            {sec.items.map((it) => (
+              <li>
+                <div class="line">
+                  <span class="name">{it.name}{it.vegan && <span class="tag">Vegan</span>}</span>
+                  <span class="price">{it.price}</span>
+                </div>
+                <p class="desc">{it.desc}</p>
+                <a class="order-link" href={orderFor(it.name)}>{menu.order}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <div class="menu-extras">
+      {menu.extras.map((sec) => (
+        <div class="menu-sec reveal">
+          <div class="sec-head"><h3>{sec.title}</h3></div>
+          <ul>
+            {sec.items.map((it) => (
+              <li>
+                <div class="line"><span class="name">{it.name}</span><span class="price">{it.price}</span></div>
+                {it.desc && <p class="desc">{it.desc}</p>}
+              </li>
+            ))}
+          </ul>
+        </div>
       ))}
     </div>
   </div>

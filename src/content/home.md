@@ -9,9 +9,9 @@
 site:
   name: "Green Leaf Pizza"
   title: "Green Leaf Pizza — Nothing missing."
-  description: "Proper pizza for the whole table. Eggless, vegan, Jain and Satvik friendly pizzas, hand-made in Harrow by Healthy Bakes."
+  description: "Proper pizza for the whole table. 100% eggless and mushroom-free, with a dedicated Jain range and vegan options. Hand-made in Harrow by Healthy Bakes."
   tagline: "Nothing missing"
-  descriptor: "Eggless · Vegan · Jain & Satvik friendly"
+  descriptor: "100% eggless · Jain, vegan & vegetarian"
   place: "Harrow, London"
   parent: "A Healthy Bakes kitchen"
   orderUrl: "https://wa.me/447440338373?text=Hi%20Green%20Leaf%20Pizza%2C%20I%27d%20like%20to%20order."
@@ -33,11 +33,11 @@ hero:
   lede: "Proper pizza for the whole table. Crisp edge, soft middle, real flavour, and every single person can eat it."
   primaryButton: "Order on WhatsApp"
   secondaryButton: "See the menu"
-  image: "/images/hero.svg"
-  imageAlt: "A Green Leaf pizza, fresh from the oven"
+  image: "/images/hero.jpg"
+  imageAlt: "A Green Leaf pizza with sweetcorn, peppers, olives and jalapeños, with tomato sauce and mozzarella on the side"
 
 # The moving strip under the hero
-ticker: ["Eggless", "Vegan", "Jain friendly", "Satvik", "Hand-made in Harrow", "Nothing missing"]
+ticker: ["100% eggless", "Mushroom-free", "Dedicated Jain range", "Vegan options", "Hand-made in Harrow", "Nothing missing"]
 
 gap:
   eyebrow: "Why we exist"
@@ -53,23 +53,80 @@ gap:
 
 menu:
   eyebrow: "On the menu"
-  title: "Four to start. All for everyone."
-  note: "Every pizza is eggless, vegan, Jain and Satvik friendly. Message us on WhatsApp to order."
-  button: "Order this"
-  # SAMPLE MENU — replace names, toppings and photos with the real menu.
-  items:
-    - name: "Margherita"
-      toppings: "San Marzano-style tomato, plant-based mozzarella, torn basil, olive oil"
-      image: "/images/menu-1.svg"
-    - name: "Garden Peppers"
-      toppings: "Red, yellow and green peppers, black olives, oregano, plant-based mozzarella"
-      image: "/images/menu-2.svg"
-    - name: "Sweetcorn & Capsicum"
-      toppings: "Sweet corn, green capsicum, chilli flakes, plant-based mozzarella"
-      image: "/images/menu-3.svg"
-    - name: "Mediterranean"
-      toppings: "Sun-dried tomato, olives, capers, rocket, plant-based mozzarella"
-      image: "/images/menu-4.svg"
+  title: "Something for every plate."
+  note: "Everything is 100% eggless and mushroom-free. Pizzas come in 9\" and 12\". Message us on WhatsApp to order."
+  sizes: "9\" / 12\""
+  order: "Order"
+  pizzas:
+    - title: "Dedicated Jain pizzas"
+      note: "No onion, no garlic, no root vegetables"
+      items:
+        - name: "Jain Classic Margherita"
+          desc: "Jain herb tomato sauce, mozzarella, fresh basil, olive oil"
+          price: "£8.49 / £11.99"
+        - name: "Jain Garden Fiesta"
+          desc: "Jain tomato sauce, mozzarella, green & red peppers, sweetcorn, black olives, tomatoes"
+          price: "£9.49 / £13.49"
+        - name: "Jain Paneer Tikka"
+          desc: "Jain tomato sauce, mozzarella, marinated paneer, mixed peppers, sweetcorn, coriander"
+          price: "£10.49 / £14.49"
+        - name: "Jain Chilli & Olive Kick"
+          desc: "Jain tomato sauce, mozzarella, jalapeños, green chillies, black olives, sweetcorn, oregano"
+          price: "£9.49 / £13.49"
+        - name: "Jain Vegan Supreme"
+          desc: "Jain tomato sauce, vegan mozzarella, mixed peppers, sweetcorn, cherry tomatoes, olives, rocket"
+          price: "£9.99 / £13.99"
+          vegan: true
+    - title: "Vegetarian & vegan pizzas"
+      note: "Made with onion and garlic"
+      items:
+        - name: "Classic Garlic Margherita"
+          desc: "Roasted garlic herb tomato sauce, mozzarella, fresh basil"
+          price: "£8.49 / £11.99"
+        - name: "Farmhouse Garden Feast"
+          desc: "Garlic tomato sauce, mozzarella, red onions, peppers, sweetcorn, olives, cherry tomatoes"
+          price: "£9.49 / £13.49"
+        - name: "Tandoori Paneer & Red Onion"
+          desc: "Tikka sauce, mozzarella, tandoori paneer, red onions, green peppers, jalapeños, coriander"
+          price: "£10.49 / £14.49"
+        - name: "Spicy Mexican Heat"
+          desc: "Garlic tomato sauce, mozzarella, red onions, jalapeños, green chillies, sweetcorn, chilli flakes"
+          price: "£9.49 / £13.49"
+        - name: "Plant-Based Mediterranean"
+          desc: "Garlic tomato sauce, vegan mozzarella, courgettes, red onions, sun-dried tomatoes, olives, basil"
+          price: "£9.99 / £13.99"
+          vegan: true
+        - name: "Vegan Spicy Veggie"
+          desc: "Garlic tomato sauce, vegan mozzarella, red onions, jalapeños, sweetcorn, peppers, chilli flakes"
+          price: "£9.99 / £13.99"
+          vegan: true
+  extras:
+    - title: "Eggless desserts"
+      items:
+        - name: "Gourmet Truffle Box (3 pcs)"
+          desc: "Matcha Nutty, Dubai Kunafa & White Sesame chocolate truffles"
+          price: "£5.49"
+        - name: "100% Eggless Chocolate Brownie"
+          desc: "Rich, fudgy dark chocolate brownie, baked egg-free"
+          price: "£3.99"
+        - name: "Warm Brownie with Hot Chocolate Sauce"
+          desc: "Warm eggless brownie with glossy hot chocolate fudge sauce"
+          price: "£4.99"
+    - title: "Meal deals"
+      items:
+        - name: "Solo Pizza & Drink"
+          desc: "Any 9\" pizza + 1 can"
+          price: "£9.49"
+        - name: "Sweet Night In"
+          desc: "Any 12\" pizza + choice of dessert"
+          price: "£15.99"
+        - name: "Jain Family Feast"
+          desc: "Any two 12\" Jain pizzas + 2 cans"
+          price: "£24.99"
+    - title: "Soft drinks (330ml)"
+      items:
+        - name: "Coca-Cola, Coke Zero, Sprite, Fanta, Water"
+          price: "£1.50"
 
 numbers:
   eyebrow: "The table is bigger than you think"
@@ -88,12 +145,13 @@ story:
   eyebrow: "Our story"
   title: "Two years in a Harrow kitchen."
   quote: "Nothing taken away from the taste. Nobody left out of the table."
-  image: "/images/kitchen.svg"
-  imageAlt: "Dough being stretched by hand in the Healthy Bakes kitchen"
+  video: "/images/fresh.mp4"
+  poster: "/images/fresh-poster.jpg"
+  videoLabel: "A fresh Green Leaf pizza, straight out of the oven"
 
 table:
-  image: "/images/table.svg"
-  imageAlt: "Pizza shared across a family table"
+  image: "/images/table.jpg"
+  imageAlt: "Close-up of a Green Leaf pizza topped with sweetcorn, peppers, olives, jalapeños and fresh coriander"
   line: "Pizza night, the whole family in."
 
 quality:
@@ -109,21 +167,21 @@ mark:
 promises:
   eyebrow: "What's on the table"
   title: "Everyone eats. Nobody asks."
-  intro: "Four promises, kept in every recipe, so you can order for the whole family without reading the small print."
+  intro: "Clear promises, so you can order for the whole family without reading the small print."
   # tone sets the tile colour: forest, basil, semolina or tomato
   items:
     - label: "Eggless"
       tone: forest
-      text: "No egg, anywhere. Not in the dough, not in the desserts."
-    - label: "Vegan"
-      tone: basil
-      text: "100% plant-based. Plant-based mozzarella, no dairy."
+      text: "100% eggless. Every pizza, every dessert."
     - label: "Jain"
       tone: semolina
-      text: "No root vegetables. No onion, garlic, potato or carrot."
-    - label: "Satvik"
+      text: "A dedicated Jain range: no onion, no garlic, no root vegetables. Suits a Satvik diet too."
+    - label: "Vegan"
+      tone: basil
+      text: "Vegan pizzas made with vegan mozzarella, marked on the menu."
+    - label: "No mushroom"
       tone: tomato
-      text: "Pure, simple ingredients. No onion, no garlic."
+      text: "Mushroom-free, across the whole menu."
 
 community:
   line: "Pure taste. Proper pizza"
@@ -152,4 +210,4 @@ Green Leaf Pizza comes from Healthy Bakes, the eggless, free-from bakery Rituja 
 
 She spent two years developing natural, free-from recipes, because every alternative she tried asked you to accept less flavour. She refused to. Healthy food doesn't have to taste bad; it just has to be made properly.
 
-Pizza was the obvious next question. Could the same care make a pizza with a crisp, blistered edge and a rich tomato heart, with no egg, no dairy, no onion, no garlic, and no compromise? It could.
+Pizza was the obvious next question. Could the same care make a pizza with a crisp, blistered edge and a rich tomato heart, with no egg anywhere, and a Jain range with no onion, no garlic and no root vegetables? It could.
