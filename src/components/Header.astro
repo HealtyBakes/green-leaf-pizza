@@ -4,7 +4,7 @@ const { site, nav } = copy;
 ---
 <header class="top">
   <div class="wrap">
-    <a href="/" aria-label={`${site.name} home`}><img src="/assets/logo.svg" alt="green leaf pizza" width="300" height="52"></a>
+    <a href="/" aria-label={`${site.name} home`}><img src="/assets/logo.svg" alt={site.logoAlt} width="300" height="52"></a>
     <nav aria-label="Main">
       <ul>
         {nav.links.map((n) => <li><a href={n.href}>{n.label}</a></li>)}

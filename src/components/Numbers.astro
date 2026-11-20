@@ -1,6 +1,6 @@
 ---
 import { copy } from '../content/copy.js';
-const { numbers } = copy;
+const { numbers, footer } = copy;
 ---
 <section class="numbers" aria-labelledby="numbers-title">
   <div class="wrap">
@@ -9,7 +9,7 @@ const { numbers } = copy;
       {numbers.items.map((s) => (
         <div class="stat">
           <div class="big">{s.big}</div>
-          <p>{s.text}{s.source && <sup><a href={`#s${s.source}`} aria-label={`Source ${s.source}`}>{s.source}</a></sup>}</p>
+          <p>{s.text}{s.source && <sup><a href={`#s${s.source}`} aria-label={`${footer.sourceLabel} ${s.source}`}>{s.source}</a></sup>}</p>
         </div>
       ))}
     </div>

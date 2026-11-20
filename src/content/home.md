@@ -17,6 +17,8 @@ site:
   orderUrl: "https://wa.me/447440338373?text=Hi%20Green%20Leaf%20Pizza%2C%20I%27d%20like%20to%20order."
   orderLabel: "WhatsApp +44 7440 338373"
   copyright: "Healthy Bakes"
+  logoAlt: "green leaf pizza"
+  skipLink: "Skip to content"
 
 nav:
   links:
@@ -57,6 +59,9 @@ menu:
   note: "Everything is 100% eggless and mushroom-free. Pizzas come in 9\" and 12\". Message us on WhatsApp to order."
   sizes: "9\" / 12\""
   order: "Order"
+  veganTag: "Vegan"
+  # {item} is replaced with the pizza name
+  orderMessage: "Hi Green Leaf Pizza, I'd like to order: {item}."
   pizzas:
     - title: "Dedicated Jain pizzas"
       note: "No onion, no garlic, no root vegetables"
@@ -160,6 +165,7 @@ quality:
   sub: "Never compromise on the quality of what you eat."
 
 mark:
+  imageAlt: "The Green Leaf Pizza symbol: a leaf shaped like a pizza peel, cut into six slices"
   eyebrow: "The mark"
   title: "One shape. Three reads."
   text: "A leaf for what it's made of. A peel for how it's made. Six cuts for the moment the box opens."
@@ -195,6 +201,7 @@ order:
 footer:
   orderPrefix: "Order:"
   sourcesTitle: "Sources"
+  sourceLabel: "Source"
   sources:
     - "Brent Council, 2021 Census factsheet: Religion in Brent (ONS Census 2021, TS030) — Brent has the 2nd largest Jain population in England & Wales after Harrow."
     - "ONS Census 2021, TS031 Religion (detailed), Harrow: 67,392 Hindu residents of 261,208."

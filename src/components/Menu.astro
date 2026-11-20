@@ -2,7 +2,7 @@
 import { copy } from '../content/copy.js';
 const { site, menu } = copy;
 const base = site.orderUrl.split('?')[0];
-const orderFor = (name) => `${base}?text=${encodeURIComponent(`Hi Green Leaf Pizza, I'd like to order: ${name}.`)}`;
+const orderFor = (name) => `${base}?text=${encodeURIComponent(menu.orderMessage.replace('{item}', name))}`;
 ---
 <section class="menu" id="menu" aria-labelledby="menu-title">
   <div class="wrap">
@@ -26,7 +26,7 @@ const orderFor = (name) => `${base}?text=${encodeURIComponent(`Hi Green Leaf Piz
             {sec.items.map((it) => (
               <li>
                 <div class="line">
-                  <span class="name">{it.name}{it.vegan && <span class="tag">Vegan</span>}</span>
+                  <span class="name">{it.name}{it.vegan && <span class="tag">{menu.veganTag}</span>}</span>
                   <span class="price">{it.price}</span>
                 </div>
                 <p class="desc">{it.desc}</p>
