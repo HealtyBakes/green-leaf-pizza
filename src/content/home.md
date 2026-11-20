@@ -36,7 +36,7 @@ hero:
   primaryButton: "Order on WhatsApp"
   secondaryButton: "See the menu"
   image: "/images/hero.jpg"
-  imageAlt: "A Green Leaf pizza with sweetcorn, peppers, olives and jalapeños, with tomato sauce and mozzarella on the side"
+  imageAlt: "A Green Leaf pizza topped with sweetcorn, peppers, olives, jalapeños and fresh coriander, with tomato sauce and mozzarella on the side"
 
 # The moving strip under the hero
 ticker: ["100% eggless", "Mushroom-free", "Dedicated Jain range", "Vegan options", "Hand-made in Harrow", "Nothing missing"]
@@ -150,11 +150,6 @@ story:
   eyebrow: "Our story"
   title: "Two years in a Harrow kitchen."
   quote: "Nothing taken away from the taste. Nobody left out of the table."
-
-table:
-  image: "/images/table.jpg"
-  imageAlt: "A Green Leaf pizza topped with sweetcorn, peppers, olives, jalapeños and fresh coriander"
-  line: "Pizza night, the whole family in."
 
 quality:
   eyebrow: "Our ingredients"
