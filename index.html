@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Green Leaf Pizza — Nothing missing.</title>
+<meta name="description" content="Proper pizza for the whole table. Eggless, vegan, Jain and Satvik friendly pizzas, hand-made in Harrow by Healthy Bakes.">
+<link rel="canonical" href="https://greenleafpizza.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://greenleafpizza.com/">
+<meta property="og:title" content="Green Leaf Pizza — Nothing missing.">
+<meta property="og:description" content="Proper pizza for the whole table. Eggless · Vegan · Jain &amp; Satvik friendly. Hand-made in Harrow.">
+<meta property="og:image" content="https://greenleafpizza.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#2F5D3A">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700;800&family=Fira+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --basil:#2F5D3A; --forest:#1C3324; --tomato:#C2381F; --dough:#F3E9D8;
+  --flour:#FBF7EF; --semolina:#E2A93B; --line:#D9CDB8;
+  --display:'Bitter', Georgia, serif; --text:'Fira Sans', Arial, sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--dough);color:var(--forest);font-family:var(--text);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:var(--basil)}
+a:hover{color:var(--forest)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-0.015em;line-height:1.04;margin:0}
+.dot{display:inline-block;width:.19em;height:.19em;border-radius:50%;background:var(--tomato);margin-left:.05em}
+.eyebrow{font-weight:600;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--basil);margin:0 0 18px}
+.descriptor{font-weight:600;font-size:15px;letter-spacing:.14em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:999px;font-weight:600;font-size:17px;text-decoration:none;transition:transform .15s ease, background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--tomato);color:var(--flour)}
+.btn-primary:hover{background:#A92F18;color:var(--flour)}
+.btn-ghost{color:var(--forest);border:2px solid var(--forest)}
+.btn-ghost:hover{background:var(--forest);color:var(--flour)}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:16px;top:16px;background:var(--flour);padding:8px 14px;z-index:10}
+
+/* header */
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:84px}
+header.top img{height:38px;width:auto}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;align-items:center}
+nav a{text-decoration:none;font-weight:500;color:var(--forest)}
+nav a.btn{color:var(--flour);min-height:44px;padding:0 20px;font-size:16px}
+
+/* hero */
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:center;padding-top:72px;padding-bottom:88px}
+.hero h1{font-size:clamp(56px,8.4vw,112px)}
+.hero .lede{font-size:clamp(20px,2.1vw,24px);max-width:30ch;margin:28px 0 22px}
+.hero .descriptor{color:var(--basil);margin:0 0 36px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:14px}
+.hero-mark{background:var(--basil);aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;position:relative}
+.hero-mark img{width:52%}
+.hero-mark figcaption{position:absolute;left:24px;right:24px;bottom:20px;display:flex;justify-content:space-between;color:var(--dough);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+
+/* gap */
+section{padding:104px 0}
+.gap{background:var(--flour);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.gap h2{font-size:clamp(38px,5vw,64px);max-width:16ch}
+.gap .intro{font-size:20px;max-width:58ch;margin:26px 0 56px}
+.rows{border-top:2px solid var(--forest)}
+.row{display:grid;grid-template-columns:72px minmax(0,1fr) minmax(0,1.3fr);gap:28px;padding:30px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.row .n{font-family:var(--display);font-weight:800;font-size:30px;color:var(--tomato)}
+.row h3{font-size:28px}
+.row p{margin:0}
+.verdict{font-family:var(--display);font-weight:800;font-size:clamp(28px,3.4vw,40px);margin:56px 0 0;max-width:24ch}
+
+/* numbers */
+.numbers{background:var(--basil);color:var(--flour);padding:88px 0}
+.numbers .eyebrow{color:var(--dough)}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:8px}
+.stat .big{font-family:var(--display);font-weight:800;font-size:clamp(40px,5vw,64px);line-height:1}
+.stat p{margin:14px 0 0;color:var(--dough);font-size:17px}
+.stat sup a{color:var(--semolina);text-decoration:none;font-size:12px}
+
+/* story */
+.story .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px}
+.story h2{font-size:clamp(38px,5vw,64px)}
+.story .body p{margin:0 0 20px;font-size:19px}
+.story .body p:first-child{font-family:var(--display);font-weight:700;font-size:26px;line-height:1.35}
+.quote{margin:36px 0 0;padding-top:24px;border-top:2px solid var(--forest);font-family:var(--display);font-weight:800;font-size:30px;line-height:1.2}
+
+/* mark */
+.mark{background:var(--forest);color:var(--flour)}
+.mark .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:72px;align-items:center}
+.mark .eyebrow{color:var(--semolina)}
+.mark h2{font-size:clamp(38px,5vw,60px)}
+.mark ol{list-style:none;margin:36px 0 0;padding:0;border-top:1px solid rgba(251,247,239,.35)}
+.mark li{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid rgba(251,247,239,.35)}
+.mark li b{font-family:var(--display);font-size:24px}
+.mark li span{color:var(--dough)}
+.mark .symbol{background:var(--basil);aspect-ratio:1;display:flex;align-items:center;justify-content:center}
+.mark .symbol img{width:56%}
+
+/* table */
+.table h2{font-size:clamp(38px,5vw,64px);max-width:18ch}
+.table .intro{font-size:20px;max-width:60ch;margin:26px 0 48px}
+.labels{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.label{background:var(--flour);border:1px solid var(--line);padding:28px 24px;display:flex;flex-direction:column;gap:12px}
+.pill{align-self:flex-start;padding:7px 14px;border-radius:999px;font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.label p{margin:0;font-size:17px}
+.label .off{font-size:15px;color:var(--basil);font-weight:500}
+
+/* community */
+.community{padding:96px 0;text-align:center;border-top:1px solid var(--line)}
+.community p.line{font-family:var(--display);font-weight:800;font-size:clamp(44px,7vw,92px);line-height:1;margin:0}
+.community p.sub{font-size:20px;margin:24px auto 0;max-width:44ch}
+
+/* order */
+.order{background:var(--tomato);color:var(--flour);padding:88px 0}
+.order .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:32px}
+.order h2{font-size:clamp(38px,5vw,64px)}
+.order p{margin:14px 0 0;font-size:20px;color:var(--flour)}
+.order .btn{background:var(--flour);color:var(--forest);min-height:60px;font-size:19px;padding:0 34px}
+.order .btn:hover{background:var(--dough);color:var(--forest)}
+
+/* footer */
+footer{background:var(--forest);color:var(--dough);padding:64px 0 40px;font-size:15px}
+footer .cols{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px;padding-bottom:40px;border-bottom:1px solid rgba(243,233,216,.25)}
+footer img{height:36px;width:auto}
+footer a{color:var(--flour)}
+footer .sources{margin-top:28px;font-size:13px;color:rgba(243,233,216,.8)}
+footer .sources ol{padding-left:18px;margin:8px 0 0}
+
+@media (max-width:900px){
+  .hero .wrap,.story .wrap,.mark .wrap{grid-template-columns:1fr;gap:48px}
+  .hero-mark{aspect-ratio:16/10}
+  .hero-mark img{width:30%}
+  .stats{grid-template-columns:1fr;gap:36px}
+  .labels{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .row{grid-template-columns:48px minmax(0,1fr)}
+  .row p{grid-column:2}
+  nav li:not(:last-child){display:none}
+  section{padding:80px 0}
+}
+@media (max-width:560px){
+  body{font-size:17px}
+  .labels{grid-template-columns:1fr}
+  .mark li{grid-template-columns:1fr;gap:4px}
+  header.top img{height:30px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a href="/" aria-label="Green Leaf Pizza home"><img src="/assets/logo.svg" alt="green leaf pizza" width="300" height="52"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#gap">Why we exist</a></li>
+        <li><a href="#story">Our story</a></li>
+        <li><a href="#table">What's on the table</a></li>
+        <li><a class="btn btn-primary" href="https://healthybakes.co.uk">Order</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title" style="padding:0">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Artisan pizza &amp; desserts · Harrow, London</p>
+      <h1 id="hero-title">Nothing missing<span class="dot" aria-hidden="true"></span></h1>
+      <p class="lede">Proper pizza for the whole table. Crisp edge, soft middle, real flavour, and every single person can eat it.</p>
+      <p class="descriptor">Eggless · Vegan · Jain &amp; Satvik friendly</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://healthybakes.co.uk">Order now</a>
+        <a class="btn btn-ghost" href="#story">Read our story</a>
+      </div>
+    </div>
+    <figure class="hero-mark" style="margin:0">
+      <img src="/assets/symbol-flour.svg" alt="" width="280" height="354">
+      <figcaption><span>A leaf</span><span>A peel</span><span>A pizza</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="gap" id="gap" aria-labelledby="gap-title">
+  <div class="wrap">
+    <p class="eyebrow">Why we exist</p>
+    <h2 id="gap-title">London has thousands of pizzas. Almost none for our table.</h2>
+    <p class="intro">Ask for a pizza with no egg, no dairy, no onion, no garlic and no root vegetables, and watch the menu fall apart. Each kind of place gets one part right and misses the rest.</p>
+    <div class="rows">
+      <div class="row"><span class="n">1</span><h3>Vegan pizzerias</h3><p>No meat, no dairy. But onion and garlic often run through the sauces, the oils and the toppings. Vegan isn't the same as Jain or Satvik.</p></div>
+      <div class="row"><span class="n">2</span><h3>The big chains</h3><p>Great at speed. But a Jain order turns into a list of things to take off, and you still can't be sure what's in the base or the sauce.</p></div>
+      <div class="row"><span class="n">3</span><h3>Indian vegetarian kitchens</h3><p>They understand Jain and Satvik food perfectly. But they're not pizzerias, and pizza night shouldn't be a compromise.</p></div>
+    </div>
+    <p class="verdict">So families picked toppings off, or didn't order at all. We think that's wrong. Pizza is meant to be shared.</p>
+  </div>
+</section>
+
+<section class="numbers" aria-labelledby="numbers-title">
+  <div class="wrap">
+    <p class="eyebrow" id="numbers-title">The table is bigger than you think</p>
+    <div class="stats">
+      <div class="stat"><div class="big">No. 1</div><p>Harrow has the largest Jain community in England and Wales.<sup><a href="#s1" aria-label="Source 1">1</a></sup></p></div>
+      <div class="stat"><div class="big">1 in 4</div><p>Harrow residents is Hindu: 67,392 people, out of 261,208.<sup><a href="#s2" aria-label="Source 2">2</a></sup></p></div>
+      <div class="stat"><div class="big">7.7m</div><p>people in the UK avoided meat at the end of 2025, about 14% of the population.<sup><a href="#s3" aria-label="Source 3">3</a></sup></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="story" aria-labelledby="story-title">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Our story</p>
+      <h2 id="story-title">Two years in a Harrow kitchen.</h2>
+    </div>
+    <div class="body">
+      <p>Green Leaf Pizza comes from Healthy Bakes, the eggless, free-from bakery Rituja started at home in Harrow.</p>
+      <p>She spent two years developing natural, free-from recipes, because every alternative she tried asked you to accept less flavour. She refused to. Healthy food doesn't have to taste bad; it just has to be made properly.</p>
+      <p>Pizza was the obvious next question. Could the same care make a pizza with a crisp, blistered edge and a rich tomato heart, with no egg, no dairy, no onion, no garlic, and no compromise? It could.</p>
+      <p class="quote">Nothing taken away from the taste. Nobody left out of the table.</p>
+    </div>
+  </div>
+</section>
+
+<section class="mark" aria-labelledby="mark-title">
+  <div class="wrap">
+    <div class="symbol"><img src="/assets/symbol-flour.svg" alt="The Green Leaf Pizza symbol: a leaf shaped like a pizza peel, cut into six slices" width="240" height="303"></div>
+    <div>
+      <p class="eyebrow">The mark</p>
+      <h2 id="mark-title">One shape. Three reads.</h2>
+      <ol>
+        <li><b>A leaf.</b><span>Fresh, green, made from plants. You see it first.</span></li>
+        <li><b>A peel.</b><span>The wooden paddle that slides pizza into the oven. Round blade, long handle, the hole it hangs by.</span></li>
+        <li><b>A pizza.</b><span>Six cuts from the centre: the moment the box opens.</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="table" id="table" aria-labelledby="table-title">
+  <div class="wrap">
+    <p class="eyebrow">What's on the table</p>
+    <h2 id="table-title">Everyone eats. Nobody asks.</h2>
+    <p class="intro">Four promises, kept in every recipe, so you can order for the whole family without reading the small print.</p>
+    <div class="labels">
+      <div class="label"><span class="pill" style="background:#1C3324;color:#FBF7EF">Eggless</span><p>No egg, anywhere. Not in the dough, not in the desserts.</p></div>
+      <div class="label"><span class="pill" style="background:#2F5D3A;color:#FBF7EF">Vegan</span><p>100% plant-based. Plant-based mozzarella, no dairy, no animal products.</p></div>
+      <div class="label"><span class="pill" style="background:#E2A93B;color:#1C3324">Jain friendly</span><p>No root vegetables.</p><p class="off">No onion, garlic, potato or carrot.</p></div>
+      <div class="label"><span class="pill" style="background:#C2381F;color:#FBF7EF">Satvik</span><p>Pure, simple, wholesome ingredients.</p><p class="off">No onion, no garlic.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="community" aria-label="Pure taste. Proper pizza.">
+  <div class="wrap">
+    <p class="line">Pure taste. Proper pizza<span class="dot" aria-hidden="true"></span></p>
+    <p class="sub">Hand-made in Harrow, for the whole table. From families who wanted pizza night back.</p>
+  </div>
+</section>
+
+<section class="order" id="order" aria-labelledby="order-title">
+  <div class="wrap">
+    <div>
+      <h2 id="order-title">Hungry yet?</h2>
+      <p>Made fresh in Harrow, serving Harrow and nearby.</p>
+    </div>
+    <a class="btn" href="https://healthybakes.co.uk">Order at healthybakes.co.uk</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <img src="/assets/logo-reversed.svg" alt="green leaf pizza" width="260" height="46">
+        <p style="margin:18px 0 0">A Healthy Bakes kitchen · Harrow, London</p>
+      </div>
+      <div>
+        <p style="margin:0">Order: <a href="https://healthybakes.co.uk">healthybakes.co.uk</a></p>
+        <p style="margin:8px 0 0">© <span id="y">2026</span> Healthy Bakes</p>
+      </div>
+    </div>
+    <div class="sources">
+      Sources
+      <ol>
+        <li id="s1">Brent Council, 2021 Census factsheet: Religion in Brent (ONS Census 2021, TS030) — Brent has the 2nd largest Jain population in England &amp; Wales after Harrow.</li>
+        <li id="s2">ONS Census 2021, TS031 Religion (detailed), Harrow: 67,392 Hindu residents of 261,208.</li>
+        <li id="s3">Finder UK diet trends survey, December 2025 (2,000 adults): 14% meat-free, about 7.7 million people.</li>
+      </ol>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
