@@ -48,7 +48,7 @@ gap:
     - q: "Vegan pizzeria?"
       a: "Still onion. Still garlic."
     - q: "Big chain?"
-      a: "Pick it off and hope."
+      a: "Same oven as the pepperoni."
     - q: "Indian kitchen?"
       a: "Perfect food. No pizza."
   verdict: "So we made the pizza we couldn't find."
@@ -147,9 +147,9 @@ numbers:
       source: 3
 
 story:
-  eyebrow: "Our story"
-  title: "Two years in a Harrow kitchen."
-  quote: "Nothing taken away from the taste. Nobody left out of the table."
+  eyebrow: "Why we started"
+  title: "Kids love pizza. Parents want to join in."
+  quote: "One pizza. The whole family round it."
 
 quality:
   eyebrow: "Our ingredients"
@@ -205,8 +205,10 @@ notFound:
   button: "Back to the whole pizza"
 ---
 
-Green Leaf Pizza comes from Healthy Bakes, the eggless, free-from bakery Rituja started at home in Harrow.
+Every family knows the moment. The kids want pizza, and of course they do.
 
-She spent two years developing natural, free-from recipes, because every alternative she tried asked you to accept less flavour. She refused to. Healthy food doesn't have to taste bad; it just has to be made properly.
+But for many parents it isn't that simple. At most pizzerias, the same oven bakes the pepperoni and the chicken. So parents order for the children and sit it out themselves, or say no and feel bad about it. Nobody wants to be the one who says no to pizza.
 
-Pizza was the obvious next question. Could the same care make a pizza with a crisp, blistered edge and a rich tomato heart, with no egg anywhere, and a Jain range with no onion, no garlic and no root vegetables? It could.
+You shouldn't have to choose. Green Leaf Pizza is made in a 100% vegetarian, eggless kitchen: no meat and no egg, ever. We use the best quality ingredients we can find, never cheaper substitutes, and there's a dedicated Jain range with no onion, garlic or root vegetables.
+
+It comes from Healthy Bakes, the eggless bakery Rituja started at home in Harrow after spending two years perfecting recipes that never ask you to accept less flavour. Now it's pizza's turn: made for the whole family, so everyone at the table can say yes.
